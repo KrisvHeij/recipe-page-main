@@ -12,3 +12,75 @@
   --fw-700: 700;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif; 
+  background-color: var(--c-white);
+  color: var(--c-stone-900);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: var(--fw-400);
+}
+
+h2 {
+  color: var(--c-brown-800);
+}
+
+p {
+  line-height: 1.5;
+}
+
+section {
+  margin: 1rem 2rem;
+}
+
+.recipe-intro h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.prep {
+  background-color: var(--c-rose-50);
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.prep h3 {
+  color: var(--c-rose-800);
+}
+
+.prep ul {
+  padding: 0.75rem;
+  list-style: none;
+}
+
+.prep li {
+  display: flex;
+  align-items: center;
+}
+
+.prep li:before {
+  content: "";
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--c-rose-800);
+  border-radius: 50%;
+}
+
+.prep p {
+  margin-left: 1.5rem; 
+  margin-block: 0.25rem;
+} 
