@@ -62,7 +62,7 @@ section {
   background-color: var(--c-rose-50);
   border-radius: 10px;
   margin-inline: 2rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .prep h3 {
@@ -102,7 +102,7 @@ section {
 }
 
 .ingredients ul {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   list-style: none;
 }
 
@@ -122,7 +122,7 @@ section {
 }
 
 .ingredients p {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
 .instructions h2 {
@@ -203,7 +203,7 @@ section {
 
   .prep {
     margin-inline: 0;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
   }
 
   .nutrition {
