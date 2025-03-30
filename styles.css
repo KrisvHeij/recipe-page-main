@@ -25,7 +25,7 @@ img {
 body {
   font-family: "Outfit", sans-serif; 
   background-color: var(--c-white);
-  color: var(--c-stone-900);
+  color: var(--c-stone-600);
 }
 
 h1,
@@ -36,6 +36,7 @@ h2 {
 
 h2 {
   color: var(--c-brown-800);
+  font-size: 2rem;
 }
 
 p {
@@ -43,13 +44,14 @@ p {
 }
 
 section {
-  margin: 1rem 2rem;
+  margin: 2rem;
 }
 
 .recipe-intro h1 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   line-height: 1;
+  color: var(--c-stone-900);
 }
 
 .prep {
@@ -63,7 +65,7 @@ section {
 }
 
 .prep ul {
-  padding: 0.75rem;
+  padding: 0.5rem;
   list-style: none;
 }
 
@@ -83,4 +85,58 @@ section {
 .prep p {
   margin-left: 1.5rem; 
   margin-block: 0.25rem;
-} 
+}
+
+.ingredients {
+  border-bottom: 1px solid var(--c-stone-150);
+  padding-bottom: 2rem; 
+}
+
+.ingredients h2 {
+  margin-bottom: 1rem;
+}
+
+.ingredients ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.ingredients li:before {
+  content: "";
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: var(--c-rose-800);
+  border-radius: 50%;
+}
+
+.ingredients li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.ingredients p {
+  margin-left: 1.5rem;
+}
+
+.instructions h2 {
+  margin-bottom: 1rem;
+}
+
+.instructions li {
+  margin-left: 1.5rem;
+}
+
+.instructions li::marker {
+  color: var(--c-brown-800);
+  font-weight: var(--fw-700);
+}
+
+.instructions p {
+  margin-left: 1rem;
+}
+
+.instructions {
+  border-bottom: 1px solid var(--c-stone-150);
+  padding-bottom: 2rem; 
+}
