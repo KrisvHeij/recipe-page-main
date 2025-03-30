@@ -24,8 +24,12 @@ img {
 
 body {
   font-family: "Outfit", sans-serif; 
-  background-color: var(--c-white);
+  background-color: var(--c-stone-100);
   color: var(--c-stone-600);
+}
+
+main {
+  background-color: var(--c-white);
 }
 
 h1,
@@ -44,7 +48,7 @@ p {
 }
 
 section {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .recipe-intro h1 {
@@ -57,7 +61,8 @@ section {
 .prep {
   background-color: var(--c-rose-50);
   border-radius: 10px;
-  padding: 1.5rem 1.5rem 1rem;
+  margin-inline: 2rem;
+  padding: 1rem;
 }
 
 .prep h3 {
@@ -76,9 +81,9 @@ section {
 
 .prep li:before {
   content: "";
-  width: 0.25rem;
-  height: 0.25rem;
-  background-color: var(--c-rose-800);
+  width: 4px;
+  height: 4px;
+  background-color: var(--c-brown-800);
   border-radius: 50%;
 }
 
@@ -103,16 +108,17 @@ section {
 
 .ingredients li:before {
   content: "";
-  width: 0.25rem;
-  height: 0.25rem;
-  background-color: var(--c-rose-800);
+  width: 4px;
+  height: 4px;
+  background-color: var(--c-brown-800);
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
 }
 
 .ingredients li {
+  position: relative;
   margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
 }
 
 .ingredients p {
@@ -134,9 +140,73 @@ section {
 
 .instructions p {
   margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .instructions {
   border-bottom: 1px solid var(--c-stone-150);
   padding-bottom: 2rem; 
+}
+
+.nutrition h2 {
+  margin-bottom: 1rem;
+}
+
+.nutrition > p {
+  margin-bottom: 1rem;
+}
+
+.nutrition div {
+  display: flex;
+  border-bottom: 1px solid var(--c-stone-150);
+}
+
+.nutrition div p {
+  flex: 1;
+  padding: 0.5rem 1.5rem;
+}
+
+.nutrition div p:nth-child(2) {
+  color: var(--c-brown-800);
+  font-weight: var(--fw-700);
+}
+
+.nutrition div:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    max-width: 44rem;
+    margin-block: 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .recipe-intro,
+  .prep,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding-inline: 0;
+  }
+
+  .prep {
+    margin-inline: 0;
+    padding-inline: 1rem;
+  }
+
+  .nutrition {
+    padding-bottom: 0;
+  }
 }
