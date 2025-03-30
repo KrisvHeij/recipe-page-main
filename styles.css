@@ -113,7 +113,7 @@ section {
   background-color: var(--c-brown-800);
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top: 44%;
 }
 
 .ingredients li {
